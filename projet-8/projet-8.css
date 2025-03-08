@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+::selection{
+    background-color: #fff;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;;
+    width: 95%;
+    background-color: #0071c2;
+    border-radius: 6px;
+    min-height: 75vh;
+    justify-content: center;
+    border-radius: 50px 0 50px;
+}
+h2{
+    text-transform: capitalize;
+    font-size: 3dvw;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+   color: #fff;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    font-size: 3dvw;
+    margin-bottom: 50px;
+    animation: anim 0.2s infinite;
+    animation-duration: 5s;
+    animation-delay: .5s;
+    animation-iteration-count: calc(infinite);
+}
+
+@keyframes anim{
+    0% {
+        transform: scale(0.5);
+      
+       
+    }  
+    100%{
+
+      letter-spacing: 1px;
+    }
+}
+.passwordBox{
+    padding: 0 10px;
+}
+input{
+    width: 100%;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 20px;
+    font-size: 3dvw;
+    font-weight: 400;
+    outline: 0;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2 !important;
+    border-radius: 6px;
+}
+.buttons{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+button{
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2dvw;
+    border-radius: 6px;
+}
+button:first-child{
+    color:  #000;
+    background-color: #f2f2f2;
+    width: 69%;
+}
+button:last-child{
+    color: #fff;
+    background-color: #000 !important;
+    width: 28%;
+    border: 1px solid #6c757d;
+}
